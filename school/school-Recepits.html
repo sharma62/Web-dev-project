@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Receipt</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+        
+        .col-1 {
+            width: 8%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-2 {
+            width: 15%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-3 {
+            width: 22%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-4 {
+            width: 30%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-5 {
+            width: 40%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-6 {
+            width: 48%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-7 {
+            width: 55%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-8 {
+            width: 62%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-9 {
+            width: 72%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-10 {
+            width: 80%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-11 {
+            width: 91%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .col-12 {
+            width: 100%;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .header {
+            background: linear-gradient(60deg, orange, white, green);
+            text-align: center;
+            padding: 35px
+        }
+        
+        .container {
+            width: 78%;
+            padding: 0px 15px 0px 15px;
+            position: absolute;
+            left: 10.5%;
+            overflow: hidden;
+            ;
+        }
+        
+        .container-fluid {
+            width: 100%;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        .border-all-side {
+            border: 1px solid black;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 300px auto;
+        }
+        
+        input {
+            padding: 5px;
+        }
+        
+        .form-group {
+            line-height: 50px;
+        }
+        
+        button {
+            padding: 5px;
+        }
+        
+        thead {
+            background-color: darkgray;
+        }
+        
+        tr:nth-last-child(even) {
+            background-color: rgb(85, 96, 121);
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid header">
+        <h2>International Business collage</h2>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; padding:10px ;">Fee Receipt</h2>
+        <div class="col">
+            <label for=""> receipt no : </label>
+            <input type="number" style="width: 50px;" id="r-no-in">
+        </div>
+        <hr>
+        <div class="col-12 " style="padding-top:50px;padding-bottom: 10px;">
+            <form action="">
+                <div class="form-group">
+                    <label for="">name of student</label> <span>:</span>
+                    <input type="text" style="width: 50% ; margin-left: 8%;" id="nos-in">
+                </div>
+
+                <div class="form-group">
+                    <label for="">class</label> <span>:</span>
+                    <input type="class" style="   margin-left: 14.8%;" id="class-in">
+
+                </div>
+                <div class="form-group">
+                    <label for="">roll</label> <span>:</span>
+                    <input type="number" style="  margin-left:15.4% ;" id="roll-in">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="">gender</label> <span>:</span>
+                    <input type="radio" style="  margin-left: 13.8%;" name="gender" value="male"> male
+                    <input type="radio" style="  margin-left: 8.8%;" name="gender" value="female"> female
+
+
+                </div>
+            </form>
+        </div>
+        <hr>
+
+
+
+        <table style="width:95%; margin-left: 10px;text-align: center ; height: 500px; " cellspacing='0'>
+            <thead>
+                <tr>
+                    <th>sr no.</th>
+                    <th>particulars</th>
+                    <th>amuont</th>
+
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    <td>1</td>
+                    <td>Admission fee</td>
+                    <td><input type="number" style="width: 100%;" id="ad-fee"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>tuition fee</td>
+                    <td><input type="number" style="width: 100%;" id="t-fee"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>festival fee</td>
+                    <td><input type="number" style="width: 100%;" id="fest-fee"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>study meterial fee</td>
+                    <td><input type="number" style="width: 100%;" id="sm-fee"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>exam fee</td>
+                    <td><input type="number" style="width: 100%;" id="exam-fee"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>fine</td>
+                    <td><input type="number" style="width: 100%;" id="fine-fee"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>other charges</td>
+                    <td><input type="number" style="width: 100%;" id="ot-fee"></td>
+                </tr>
+                <tr style="height: 200px;text-align: start;line-height: 50px; ">
+                    <td colspan="2">
+
+                        <div>
+                            <p>name <span style="margin-left: 60px;">:</span> <span id="name-out"></span></p>
+                            <hr>
+                            <p>class <span style="margin-left: 62px;">:</span> <span id="class-out"></span></p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>roll <span style="margin-left: 70px;">:</span> <span id="roll-out"></span></p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>gender <span style="margin-left: 50px;">:</span> <span id="gender-out"></span></p>
+
+                            <p>
+                                <label for="">paid by :</label>
+                                <select name="pay" id="pay-method">
+                                    <option value="online">netbanking </option>
+                                    <option value="online">cash </option>
+                                    <option value="online">upi </option>
+                                    <option value="online">debit card</option>
+                                    <option value="online">credit card </option>
+                                </select>
+
+
+
+
+                            </p>
+                        </div>
+
+                    </td>
+                    <td width="300px" height="200px" style="line-height: 47.5px;">
+                        <p>total : <span style="margin-left: 10px;" id="total"></span></p>
+                        <hr>
+                        <p>pay <span style="margin-left: 20px;">: <input type="text" placeholder="amount"
+                                    id="pay"></span></p>
+                        <hr>
+                        <p>final :<span style="margin-left: 10px;" id="final"> </span></p>
+
+
+                    </td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3 ">all above mentioned amount once paid are not refundable in any case whatsoever.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="height: 100px;" colspan="3">
+
+                        <button type="button" onclick="call_submit()">submit</button>
+
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br><br><br>
+    </div>
+
+
+    <script>
+        function call_submit() {
+            // const r_no = document.getElementById('r-no-in').value;
+            const nos = document.getElementById('nos-in').value;
+            const std = document.getElementById('class-in').value;
+            const roll = document.getElementById('roll-in').value;
+            const gender = document.getElementsByName('gender');
+            for (let i = 0; i < gender.length; i++) {
+                if (gender[i].checked) {
+                    document.getElementById("gender-out").innerHTML = gender[i].value;
+                }
+            }
+            // fee calculation
+            var total = 0;
+            const a = document.getElementById('ad-fee').value;
+            const b = document.getElementById('t-fee').value;
+            const c = document.getElementById('fest-fee').value;
+            const d = document.getElementById('sm-fee').value;
+            const e = document.getElementById('exam-fee').value;
+            const f = document.getElementById('fine-fee').value;
+            const g = document.getElementById('ot-fee').value;
+            total = Number(a) + Number(b) + Number(c) + Number(d) + Number(e) + Number(f) + Number(g);
+            const pay = document.getElementById('pay').value;
+            const final = total - Number(pay);
+
+
+            document.getElementById("name-out").innerHTML = nos;
+            document.getElementById("class-out").innerHTML = std;
+            document.getElementById("roll-out").innerHTML = roll;
+            document.getElementById("total").innerHTML = total + ' Rs';
+            document.getElementById("final").innerHTML = final + ' Rs';
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel-form</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            clear: both;
+            text-transform: capitalize;
+        }
+        
+        .header {
+            background-color: cadetblue;
+            height: 100px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            width: 100%;
+        }
+        
+        .container-1 {
+            position: absolute;
+            text-align: center;
+            display: flex;
+            border: 1px solid black;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 100px;
+        }
+        
+        .container-1 div {
+            padding: 5px;
+            margin-right: 25px;
+        }
+        
+        .container-1 a {
+            text-decoration: none;
+        }
+        
+        .container-2 {
+            margin-top: 150px;
+            display: grid;
+            grid-template-rows: repeat(5, minmax(200, min-content));
+            justify-items: center;
+            grid-auto-rows: 400px;
+            position: absolute;
+            width: 100%;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .class-1,
+        .class-2,
+        .class-3,
+        .class-4,
+        .class-5 {
+            border: 1px solid black;
+            width: 70%;
+            font-weight: bold;
+        }
+        
+        .sub-container {
+            font-size: large;
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-auto-rows: 40px;
+            padding-left: 15px;
+        }
+        
+        .t-area,
+        .inp-area {
+            line-height: 50px;
+            padding-right: 15px;
+            padding-top: 20px;
+        }
+        
+        .inp-area input {
+            padding: 5px;
+        }
+        
+        .button1 {
+            float: right;
+            padding: 5px;
+            margin-left: 5px;
+            margin-top: -40px;
+        }
+        
+        .sub-container-2 {
+            padding-left: 25px;
+            display: grid;
+            grid-template-rows: repeat(1, 300px);
+            grid-template-columns: repeat(2, 400px);
+        }
+        
+        .sub-container-2 img {
+            border-radius: 5px;
+        }
+        
+        .sub-container-2 img:hover {
+            opacity: .6;
+        }
+        
+        .c-area {
+            height: 50px;
+            float: right;
+            padding-right: 15px;
+        }
+        
+        .rectangle {
+            width: 300px;
+            height: 100px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 350px;
+            border: 1px solid;
+            text-align: center;
+        }
+        
+        .increse {
+            height: 500px;
+        }
+        
+        .sub-container-null {
+            font-size: large;
+            padding-top: 5px;
+            padding-left: 15px;
+        }
+        
+        footer {
+            background-color: rgb(168, 167, 167);
+            height: 90px;
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            margin-top: 2500px;
+        }
+        
+        .inp-area span {
+            padding-left: 10px;
+        }
+        
+        .btn {
+            position: absolute;
+            height: 35px;
+            top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Hotel Registration Form</h2>
+    </div>
+    <div class="container-1">
+        <div><a href="#">customer details</a></div>
+        <div><a href="#">room info </a></div>
+        <div><a href="#">amenities </a></div>
+        <div><a href="#">advance </a></div>
+        <div><a href="#">bill summary </a></div>
+    </div>
+
+    <div class="container-2">
+        <div class="class-1">
+            <h2>customer details</h2>
+            <div class="sub-container">
+                <div class="t-area">
+                    <span>name</span><br>
+                    <span>Check in date</span><br>
+                    <span>total no of people</span><br>
+                    <span>total no of days</span>
+                </div>
+                <div class="inp-area">
+                    : <input type="text" placeholder="Name" style="width:70%;padding: 5px;" id="name"><br> : <input type="date" name="date" id="date"><br> : <input type="number" name="" id="tnp"><br> : <input type="number" name="" id="days"><br><br>
+                    <p>Note : More then 2 person we will charge 500 / each .</p>
+                    <button class="button1">next</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="class-2">
+            <h2>room info </h2>
+            <div class="sub-container-2">
+                <div class="t-area">
+                    <img src="Delux.jpg" alt="Delux hotel Room" width="70%">
+                    <p><input type="radio" name="radio1" value="Delux"> Delux</p>
+                </div>
+                <div class="inp-area">
+                    <img src="suites-2.jpg" alt="Delux hotel Room " width="70%">
+                    <p><input type="radio" name="radio1" value="suites"> suites</p>
+
+                </div>
+                <p>cost : dulex : 2500 rs /day<span>
+                        <p>suites : 4000 rs/day</p>
+                    </span></p>
+            </div>
+            <div class="c-area">
+                <button>next</button>
+                <button>previous</button>
+
+            </div>
+        </div>
+        <div class="class-3">
+            <h2>amenities </h2>
+            <div class="sub-container-2">
+                <div class="t-area">
+                    <img src="locker.webp" alt="Delux hotel Room" width="70%">
+                    <p><input type="radio" name="Radio2" value="Locker"> locker</p>
+                </div>
+                <div class="inp-area">
+                    <img src="ac.jpg" alt="Delux hotel Room " width="70%">
+                    <p><input type="radio" name="Radio2" value="Ac"> AC</p>
+
+                </div>
+                <p>cost : locker : 200 rs /day<span>
+                        <p>ac : 500 rs/day</p>
+                    </span></p>
+            </div>
+            <div class="c-area">
+                <button>next</button>
+                <button>previous</button>
+
+            </div>
+        </div>
+        <div class="class-4">
+            <h2>advance</h2>
+            <div class="sub-container-2">
+                <div class="rectangle">
+                    <input type="number" id="adv-in" style="min-width: 300px; height: 100px;font-size: large;" placeholder="Advance pay amount ">
+
+                </div>
+
+
+            </div>
+            <p>note : advance payment will maneged in final bill </p>
+            <div class="c-area">
+                <button>next</button>
+                <button>previous</button>
+
+            </div>
+        </div>
+        <div class="class-5 increse">
+            <h2>bill summary</h2>
+            <div class="sub-container-2">
+                <div class="t-area">
+                    <p>customer name </p>
+                    <p>Check in date</p>
+                    <p>total no of people</p>
+                    <p>total no of days</p>
+                    <p>room type</p>
+                    <p>aminities</p>
+                    <p>advance</p>
+                    <p>balance</p>
+                </div>
+                <div class="inp-area">
+                    <p>:<span id="opname"> </span> </p>
+                    <p>:<span id="opdate"> </span> </p>
+                    <p>:<span id="optnp"> </span> </p>
+                    <p>:<span id="opdays"> </span> </p>
+                    <p>:<span id="room"> </span> </p>
+                    <p>:<span id="amin"> </span> </p>
+                    <p>:<span id="adv-out"></span> </p>
+                    <p>:<span id="bal"> </span> </p>
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="btn" style="position: relative; float: right; display: flex; ;">
+            <button type="button" onclick="submit()">book</button>
+            <button type="reset" onclick="alert('Reset successful')" style="margin-left: 5px; padding:8px">Reset</button>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer style="background-color: cadetblue;text-align: center; line-height: 20px; height: 100px;">
+        <p>@ all rights reserved 2020 </p>
+
+    </footer>
+
+
+    <script>
+        function submit() {
+            var total = 0;
+            console.log(total);
+            //input
+            var name = document.getElementById('name').value;
+            var date = document.getElementById('date').value;
+            var tnp = document.getElementById('tnp').value;
+            var days = document.getElementById('days').value;
+            var adv = document.getElementById('adv-in').value;
+            //process
+            const a = document.getElementsByName('radio1');
+            for (let i = 0; i < a.length; i++) {
+                if (a[i].checked) {
+                    document.getElementById('room').innerHTML = a[i].value;
+                    if (a[i].value == 'Delux') {
+                        const del = 2500;
+                        total += del;
+
+                    } else {
+                        const suite = 4000;
+                        total += suite;
+
+                    }
+                }
+            }
+
+            const b = document.getElementsByName('Radio2');
+            for (let j = 0; j < b.length; j++) {
+                if (b[j].checked) {
+                    document.getElementById('amin').innerHTML = b[j].value;
+                    if (b[j].value == 'Ac') {
+                        const Ac = 500;
+                        total += Ac;
+
+
+                    } else {
+                        const locker = 200;
+                        total += locker;
+
+                    }
+                }
+            }
+
+            if (tnp <= 2) {
+                total *= days;
+                document.getElementById('bal').innerHTML = total - adv;
+
+            } else {
+                tnp -= 2;
+                let temp = total * tnp;
+                let em = 500 * tnp;
+                total += (em + temp);
+                total *= days;
+                document.getElementById('bal').innerHTML = total - adv;
+
+            }
+
+
+
+            document.getElementById('opname').innerHTML = name;
+            document.getElementById('opdate').innerHTML = date;
+            document.getElementById('optnp').innerHTML = tnp;
+            document.getElementById('opdays').innerHTML = days;
+            document.getElementById('adv-out').innerHTML = adv;
+
+        }
+    </script>
+
+</body>
+
+</html>
